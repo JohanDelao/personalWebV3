@@ -1,0 +1,117 @@
+body{
+    margin: 0 auto;
+    width: 50%;
+    min-height: 100vh;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    background: linear-gradient(90deg, rgba(11,11,22,1) 0%, rgba(38,38,48,1) 18%, rgba(43,43,52,1) 49%, rgba(69,69,77,1) 89%, rgba(50,50,59,1) 100%, rgba(81,81,88,1) 100%, rgba(88,88,95,1) 100%, rgba(153,153,157,1) 100%);
+    background-size: 400%;
+    animation: bg-animation 15s infinite alternate;
+}
+@keyframes bg-animation {
+    0% {
+        background-position: left;
+    }
+    100% {
+        background-position: right;
+    }
+}
+.rightSide{
+    display: flex;
+    float: right;
+    padding: 5px 0;
+}
+.rightSide li{
+    list-style: none;
+    font-weight: 700;
+    margin: 0 5px;
+}
+.nameTitle{
+    font-size: 4rem;
+    margin: 0;
+    margin-bottom: 3%;
+}
+.introSection{
+    padding: 10% 0;
+    padding-bottom: 8%;
+}
+.smallIntros{
+    margin: 0;
+}
+.about{
+    margin-bottom: 6%;
+}
+.importantWords{
+    color: rgb(255, 0, 0);
+}
+.aboutText{
+    text-align: justify;
+}
+.lists{
+    display: flex;
+}
+.languages{
+    margin-right: 5%;
+}
+.technologies{
+    margin-bottom: 6%;
+}
+.projectName{
+    text-decoration: none;
+}
+.projects{
+    margin-bottom: 6%;
+}
+.icons img{
+    color: white;
+    text-decoration: none;
+}
+.fa {
+    text-decoration: none;
+    margin-right: 15px;
+}
+a.fa.fa-envelope{
+    color: white;
+    font-size: 30px;
+}
+a.fa.fa-envelope:hover{
+    color: red;
+}
+a.fa.fa-linkedin{
+    color: white;
+    font-size: 30px;
+}
+a.fa.fa-linkedin:hover{
+    color: red;
+}
+a.fa.fa-github{
+    color: white;
+    font-size: 30px;
+}
+a.fa.fa-github:hover{
+    color: red;
+}
+@media only screen and (max-width: 600px) {
+    body{
+        width: 80%;
+        padding: 10px;
+        margin-bottom: 10%;
+        height: 120vh;
+    }
+    .languages{
+        width: 120px;
+    }
+}
+@media only screen and (max-width: 1000px){
+    body{
+        padding: 20px;
+        height: 120vh;
+    }
+    .contact p{
+        margin: 5px 0;
+    }
+    .contact h1{
+        margin: 5px 0;
+    }
+}
