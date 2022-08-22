@@ -31,6 +31,7 @@ body{
     font-size: 4rem;
     margin: 0;
     margin-bottom: 3%;
+    animation: slideInFromTop 750ms ease-in;
 }
 .introSection{
     padding: 10% 0;
@@ -38,6 +39,13 @@ body{
 }
 .smallIntros{
     margin: 0;
+    animation: slideInFromLeft 900ms ease-in;
+}
+/* .title {
+    animation: slideInFromLeft 900ms ease-in;
+} */
+.about .title{
+    animation: slideInFromLeft 1s ease-in;
 }
 .about{
     margin-bottom: 6%;
@@ -47,9 +55,14 @@ body{
 }
 .aboutText{
     text-align: justify;
+    animation: slideInFromRight 1100ms ease-in;
+}
+.technologies .title{
+    animation: slideInFromLeft 1200ms ease-in;
 }
 .lists{
     display: flex;
+    animation: slideInFromRight 1300ms ease-in;
 }
 .languages{
     margin-right: 5%;
@@ -57,8 +70,14 @@ body{
 .technologies{
     margin-bottom: 6%;
 }
+.projects .title{
+    animation: slideInFromLeft 1400ms ease-in;
+}
 .projectName{
     text-decoration: none;
+}
+.projectDesc{
+    animation: slideInFromRight 1500ms ease-in;
 }
 .projects{
     margin-bottom: 6%;
@@ -66,6 +85,15 @@ body{
 .icons img{
     color: white;
     text-decoration: none;
+}
+.contact .title{
+    animation: slideInFromLeft 1600ms ease-in;
+}
+.icons{
+    animation: slideInFromRight 1700ms ease-in;
+}
+.contactSent{
+    animation: slideInFromLeft 1800ms ease-in;
 }
 .fa {
     text-decoration: none;
@@ -92,6 +120,46 @@ a.fa.fa-github{
 a.fa.fa-github:hover{
     color: red;
 }
+/* Animations */
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%)
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+} 
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%)
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+} 
+
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-100%)
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+} 
+
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(100%)
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+} 
 @media only screen and (max-width: 600px) {
     body{
         width: 80%;
