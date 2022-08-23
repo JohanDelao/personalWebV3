@@ -32,6 +32,24 @@ body{
     margin: 0;
     margin-bottom: 3%;
     animation: slideInFromTop 750ms ease-in;
+    position: relative;
+}
+.nameTitle::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 60%;
+    height: 2px;
+    background-color: red;
+
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 250ms ease-in;
+}
+.nameTitle:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
 }
 .introSection{
     padding: 10% 0;
